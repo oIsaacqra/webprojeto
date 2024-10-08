@@ -1,0 +1,259 @@
+.sidebar-cliente {
+width: 100px;
+height: 100vh;
+background-color: black;
+padding: 1rem;
+box-sizing: border-box;
+color: white;
+overflow: hidden;
+border-radius: 1rem 1rem 1rem 1rem;
+transition: .75s ease;
+
+}
+
+.sidebar-cliente:hover {
+width: 360px;
+z-index: 1;
+}
+
+.sidebar-cliente .logo-side-ige {
+display: flex;
+max-width: 30%;
+align-items: center;
+justify-content: center;
+margin-left: 15px;
+}
+
+#img-side-cliente {
+width: 80px;
+height: 80px;
+}
+
+.side-cliente {
+display: grid;
+grid-template-columns: max-content;
+align-items: center;
+padding: .5rem 0 4rem 1.3rem;
+}
+
+.side-cliente .nav__link {
+display: flex;
+outline: none;
+text-decoration: none;
+justify-content: space-between;
+margin: 80px -15px;
+align-items: center;
+max-height: 20px;
+padding: 0rem 0rem;
+}
+
+.components-side-client:hover {
+background-color: rgb(168, 168, 168);
+width: 280px;
+border-radius: 15px;
+color: rgb(0, 0, 0);
+transition: all 0.3s ease-in;
+padding: 1rem;
+}
+
+#icon-side-cliente {
+font-size: 32pt;
+color: white;
+}
+
+.side-cliente .nav__link span {
+margin: 0 auto;
+font-weight: 600;
+padding: 0rem 2.2rem;
+color: white;
+align-items: center;
+text-align: center;
+font-size: 15pt;
+}
+
+.btn-login-out-cliente {
+display: flex;
+outline: none;
+border: none;
+background-color: white;
+padding: .5rem 1rem;
+border-radius: 15px;
+}
+
+.btn-login-out-cliente:hover {
+background-color: rgb(189, 189, 189);
+transition: all 0.3s ease-in-out;
+color: white;
+cursor: pointer;
+}
+
+.content-agendamentos {
+display: flex;
+justify-content: space-between;
+margin: -900px 600px;
+z-index: -1;
+flex-direction: column;
+}
+
+#title-agendar-top {
+    text-align: center;
+}
+
+#button {
+width: 75px;
+cursor: pointer;
+box-shadow: 0px 0px 2px gray;
+border: none;
+outline: none;
+padding: 5px;
+border-radius: 5px;
+color: white;
+}
+
+#header {
+padding: 10px;
+color: #000000 ;
+font-size: 26px;
+font-family: sans-serif;
+display: flex;
+justify-content: space-between;
+}
+
+#header button {
+background-color: #ffffff;
+}
+
+#container {
+width: 770px;
+}
+
+#weekdays {
+width: 100%;
+display: flex;
+color: #000000 ;
+}
+
+#weekdays div {
+width: 100px;
+padding: 10px;
+}
+
+#calendar {
+width: 100%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+}
+
+.day {
+width: 100px;
+padding: 10px;
+height: 100px;
+cursor: pointer;
+box-sizing: border-box;
+background-color: rgb(0, 0, 0);
+color: white;
+margin: 5px;
+box-shadow: 0px 0px 3px #020202;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border-radius: 15%;
+}
+
+.day:hover {
+background-color: #ffffff;
+color: black;
+transition: all 0.3s ease-out;
+
+}
+
+.day + #currentDay {
+background-color: #ffffff;
+color: black;
+}
+
+.event {
+font-size: 10px;
+padding: 3px;
+background-color: #ffffff;
+color: rgb(0, 0, 0);
+border-radius: 5px;
+max-height: 55px;
+overflow: hidden;
+}
+
+.padding {
+cursor: default !important;
+background-color: #FFFCFF !important;
+box-shadow: none !important;
+}
+
+#newEventModal, #deleteEventModal {
+display: none;
+z-index: 20;
+padding: 25px;
+background-color: #e8f4fa;
+box-shadow: 0px 0px 3px black;
+border-radius: 5px;
+width: 350px;
+top: 100px;
+left: calc(50% - 175px);
+position: absolute;
+font-family: sans-serif;
+}
+
+#eventTitleInput {
+padding: 10px;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 25px;
+border-radius: 3px;
+outline: none;
+border: none;
+box-shadow: 0px 0px 3px gray;
+}
+
+#eventTitleInput.error {
+border: 2px solid rgb(0, 0, 0);
+}
+
+#cancelButton, #deleteButton {
+background-color: #ff0000;
+}
+
+#saveButton, #closeButton {
+background-color: #3f5088;
+}
+
+#eventText {
+font-size: 14px;
+}
+
+#modalBackDrop {
+display: none;
+top: 0px;
+left: 0px;
+z-index: 10;
+width: 100vw;
+height: 100vh;
+position: absolute;
+background-color: rgba(0,0,0,0.8);
+}
+
+.btn-card-event {
+    outline: none;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0.2rem;
+    color: black;
+    padding: 5px;
+}
+
+.btn-card-event:hover {
+    background-color: gray;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease-in;
+}
