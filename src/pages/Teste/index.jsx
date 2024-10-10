@@ -134,7 +134,7 @@ const Teste = () => {
         </div>
         <button className="btn-login-out-cliente">Login</button>
       </div>
-      <div className="content-agendamentos">
+      <div className="content-agendamentos-teste">
       <h1 id="title-agendar-top">Agendar</h1>
         <div id="container">
           <div id="header">

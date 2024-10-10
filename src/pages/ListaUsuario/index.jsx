@@ -25,8 +25,8 @@ const DataList = () => {
 
 },[]);
 
- if (loading) return <p>Carregando...</p>;
- if (error) return <p>Erro: {error}</p>;
+ if (loading) return <p id="p-lista">Carregando...</p>;
+ if (error) return <p id="p-lista">Erro: {error}</p>;
 
  return(
   <ul>

@@ -27,7 +27,6 @@ function Home(){
                                         <li><a href="#services">SERVIÇOS</a></li>
                                         <li><a href="#about">SOBRE</a></li>
                                         <li><a href="#contact">CONTATO</a></li>
-                                        <li><a href="/lista">LISTAR USUÁRIOS</a></li>
                                     </div>
                                 </ul>
                             <div class="btn">

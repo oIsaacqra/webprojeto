@@ -3,6 +3,7 @@ import  {useForm} from "react-hook-form";
 import { Link } from 'react-router-dom';
 import { useState } from "react";
 import api from "../../services/api";
+import "./CadFuncionario.css";
 
 const Usuario = () => {
  
@@ -31,58 +32,59 @@ const Usuario = () => {
 
 return(
            
-  <div className="app-container">
-      <div class="container">
+  <div className="app-container-cadfunc">
+      <div class="container-cadfunc">
+        <a href="/"><img src="./src/assets/logo_black-sf.png" id="logo-top-cadfunc"/></a>
         <div class="form">
             <form action="#" id="cadForm">
                 <div class="form-header">
                     <div className="title">
-                        <h1>Cadastre-se</h1>
+                        <h1>Cadastrar-se</h1>
                     </div>
                 </div>
 
                 <div class="input-group continue-button">
                     <div class="input-box">
                         <label for="name">Nome</label>
-                        <input type="text" placeholder="Digite seu nome" required onChange={(e)=>setNome(e.target.value)}/>
+                        <input type="text" placeholder="Digite seu nome" className="input-cadfunc" required onChange={(e)=>setNome(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required onChange={(e)=>setEmail(e.target.value)}/>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" className="input-cadfunc" required onChange={(e)=>setEmail(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required onChange={(e)=>setSenha(e.target.value)}/>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" className="input-cadfunc" required onChange={(e)=>setSenha(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="local">Endereço</label>
-                        <input id="local" type="text" name="local" placeholder="Digite seu endereço" required onChange={(e)=>setLogradouro(e.target.value)}/>
+                        <input id="local" type="text" name="local" placeholder="Digite seu endereço" className="input-cadfunc" required onChange={(e)=>setLogradouro(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="bairro">Bairro</label>
-                        <input id="bairro" type="text" name="bairro" placeholder="Digite seu bairro" required onChange={(e)=>setBairro(e.target.value)}/>
+                        <input id="bairro" type="text" name="bairro" placeholder="Digite seu bairro" className="input-cadfunc" required onChange={(e)=>setBairro(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="cidade">Cidade</label>
-                        <input id="cidade" type="text" name="cidade" placeholder="Digite sua cidade" required onChange={(e)=>setCidade(e.target.value)}/>
+                        <input id="cidade" type="text" name="cidade" placeholder="Digite sua cidade" className="input-cadfunc" required onChange={(e)=>setCidade(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="uf">Estado</label>
-                        <input id="uf" type="text" name="uf" placeholder="Coloque seu estado" required onChange={(e)=>setUf(e.target.value)}/>
+                        <input id="uf" type="text" name="uf" placeholder="Coloque seu estado" className="input-cadfunc" required onChange={(e)=>setUf(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="cep">CEP</label>
-                        <input id="cep" type="text" name="cep" placeholder="Coloque seu CEP" required onChange={(e)=>setCep(e.target.value)}/>
+                        <input id="cep" type="text" name="cep" placeholder="Coloque seu CEP" className="input-cadfunc" required onChange={(e)=>setCep(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="tel">Telefone</label>
-                        <input id="tel" type="text" name="tel" placeholder="Coloque seu Telefone" required onChange={(e)=>setTelefone(e.target.value)}/>
+                        <input id="tel" type="text" name="tel" placeholder="Coloque seu Telefone" className="input-cadfunc" required onChange={(e)=>setTelefone(e.target.value)}/>
                     </div>
                     <div class="input-box">
                         <label for="date">Data</label>
-                        <input id="date" type="date" name="date" placeholder="Digite a data de nascimento" required onChange={(e)=>setData(e.target.value)}/>
+                        <input id="date" type="date" name="date" placeholder="Digite a data de nascimento" className="input-cadfunc" required onChange={(e)=>setData(e.target.value)}/>
                     </div>
-                    <button onClick={handleSubmit} className="button">cadastrar-se</button>
+                    <button onClick={handleSubmit} className="button-cadfunc">Cadastrar</button>
                     <div className="login">
                       <p>Ja tem cadastro? <b>Logar-se</b></p>
                     </div>

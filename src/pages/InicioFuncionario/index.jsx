@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PrivateRoute from '../../components/PrivateRoute';
 import ListarAgendamentos from '../../components/ListarAgendamentos ';
-import "./Funcionario.css";
+import "./InicioFuncionario.css";
 
-function Funcionario(){
+function InicioFuncionario(){
 
     return(
-      <PrivateRoute>
+        <PrivateRoute>
         <div>
             <div>
                   { /* HTML Imports e etc.. */ }
@@ -49,13 +49,12 @@ function Funcionario(){
         <button className="btn-login-out-cliente" >Login</button>
       </div>
       <div className="content-agendamentos">
-        <ListarAgendamentos/>
+        <h1>Olá Usuário, seja bem-vindo</h1>
       </div>
     </div>
     </PrivateRoute>
-        
     )
 
 }
 
-export default Funcionario;
+export default InicioFuncionario;

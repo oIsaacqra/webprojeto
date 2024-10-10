@@ -9,6 +9,8 @@ import Cliente from './pages/Cliente'
 import CadFuncionario from './pages/CadFuncionario'
 import Funcionario from './pages/Funcionario'
 import Teste from "./pages/Teste"
+import InicioFuncionario from "./pages/InicioFuncionario";
+import InicioCliente from "./pages/inicioCliente";
 
 
 
@@ -24,7 +26,9 @@ function RoutesApp(){
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/cliente" element={<Cliente/>}/>
                 <Route path="/CadFuncionario" element={<CadFuncionario/>}/>
+                <Route path="/inicioFuncionario" element={<InicioFuncionario/>}/>
                 <Route path="/teste" element={<Teste/>}/>
+                <Route path="/inicioCliente" element={<InicioCliente/>}/>
             </Routes>
     </BrowserRouter>
  )

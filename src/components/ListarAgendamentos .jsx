@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import api from './../services/api';
+import "./ListarAgendamentos.css";
 
 const ListarAgendamentos = () => {
   const [agendamento, setAgendamento] = useState([]);

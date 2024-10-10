@@ -25,9 +25,9 @@ const Login = () => {
       console.log('roles:', roles);
 
       if (roles == 'ROLE_FUNCIONARIO') {
-        navigate('/funcionario');
+        navigate('/inicioFuncionario');
       } else if (roles == 'ROLE_CLIENTE') {
-        navigate('/cliente');
+        navigate('/inicioCliente');
       } else {
         setError('Tipo de usuário desconhecido.');
       }

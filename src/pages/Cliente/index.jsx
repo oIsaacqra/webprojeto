@@ -8,6 +8,7 @@ import AgendamentoForm from '../../components/AgendamentoForm'; // Formulário d
 function Cliente() {
 
   return (
+    <PrivateRoute>
 
     <div>
 
@@ -23,10 +24,10 @@ function Cliente() {
           <a href="/"><img src="./src/assets/logo_white-sf.png" id="img-side-cliente" /></a>
         </div>
         <div className="side-cliente">
-            <a href="/" class="nav__link">
+            <a href="/inicioCliente" class="nav__link">
             <div className="components-side-client">
               <i class="bi bi-house-door" id="icon-side-cliente"></i>
-              <span class="nav__name"> Home</span>
+              <span class="nav__name"> Inicio</span>
             </div>
             </a>
             <a href="/cliente" class="nav__link">
@@ -49,6 +50,7 @@ function Cliente() {
         <AgendamentoForm />
       </div>
     </div>
+    </PrivateRoute>
   );
 };
 

@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./InicioCliente.css";
 import PrivateRoute from '../../components/PrivateRoute';
-import ListarAgendamentos from '../../components/ListarAgendamentos ';
-import "./Funcionario.css";
+import AgendamentoForm from '../../components/AgendamentoForm'; // Formulário de agendamento
 
-function Funcionario(){
 
-    return(
-      <PrivateRoute>
-        <div>
+function InicioCliente() {
+
+  return (
+    <PrivateRoute>
+
+    <div>
+
             <div>
                   { /* HTML Imports e etc.. */ }
         
@@ -21,41 +24,33 @@ function Funcionario(){
           <a href="/"><img src="./src/assets/logo_white-sf.png" id="img-side-cliente" /></a>
         </div>
         <div className="side-cliente">
-            <a href="/inicioFuncionario" class="nav__link">
+            <a href="/inicioCliente" class="nav__link">
             <div className="components-side-client">
               <i class="bi bi-house-door" id="icon-side-cliente"></i>
               <span class="nav__name"> Inicio</span>
             </div>
             </a>
-            <a href="/CadFuncionario" class="nav__link">
+            <a href="/cliente" class="nav__link">
             <div className="components-side-client">
-            <i class="bi bi-person-badge" id="icon-side-cliente"></i>
-              <span class="nav__name"> Add Funcionario</span>
+            <i class="bi bi-calendar-plus" id="icon-side-cliente"></i>
+              <span class="nav__name"> Agendar</span>
               </div>
             </a>
-            <a href="/funcionario" class="nav__link">
+            <a href="#" class="nav__link">
             <div className="components-side-client">
             <i class="bi bi-calendar-check" id="icon-side-cliente"></i>
-              <span class="nav__name"> Agendamentos</span>
-              </div>
-            </a>
-            <a href="/lista" class="nav__link">
-            <div className="components-side-client">
-            <i class="bi bi-card-list" id="icon-side-cliente"></i>
-              <span class="nav__name">Listar Usuarios</span>
+              <span class="nav__name"> Meus Agendamentos</span>
               </div>
             </a>
         </div>
         <button className="btn-login-out-cliente" >Login</button>
       </div>
       <div className="content-agendamentos">
-        <ListarAgendamentos/>
+        <h1>Olá Cliente, seja bem-vindo</h1>
       </div>
     </div>
     </PrivateRoute>
-        
-    )
+  );
+};
 
-}
-
-export default Funcionario;
+export default InicioCliente;
